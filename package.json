@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "yaml": "^2.8.1"
+  },
+  "description": "Versioned subconverter config and rules generator for Clash, powered by Node.js + TypeScript + YAML.",
+  "devDependencies": {
+    "@biomejs/biome": "2.4.4",
+    "@types/node": "^25.3.0",
+    "tsdown": "^0.20.3",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": "^24",
+    "pnpm": "^10"
+  },
+  "name": "subconv-ruleforge",
+  "packageManager": "pnpm@10.30.2",
+  "scripts": {
+    "build": "tsdown",
+    "check": "biome check --write --diagnostic-level=warn",
+    "check:error": "biome check --write --diagnostic-level=error",
+    "check:generated": "node --experimental-strip-types src/scripts/generate.ts --check",
+    "check:unsafe": "biome check --write --unsafe --diagnostic-level=warn",
+    "clean": "git clean -fdX",
+    "format": "biome format --write",
+    "generate": "node --experimental-strip-types src/scripts/generate.ts",
+    "lint": "biome lint --write --diagnostic-level=warn",
+    "lint:unsafe": "biome lint --write --unsafe --diagnostic-level=warn",
+    "test": "node --experimental-strip-types --test test/**/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "verify": "pnpm run generate && pnpm run check:generated && pnpm run typecheck && pnpm run test"
+  },
+  "type": "module",
+  "version": "0.0.1"
+}

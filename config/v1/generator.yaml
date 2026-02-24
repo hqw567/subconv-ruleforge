@@ -1,0 +1,64 @@
+output:
+  rawBaseUrl: https://raw.githubusercontent.com/hqw567/clash/main
+  configDir: v1/config
+  rulesDir: v1/rules
+
+rules:
+  proxy:
+    file: proxy.list
+    domains:
+      - hdhive.com
+      - truenas.com
+      - ffqla.net
+      - wallhaven.cc
+      - midjourney.com
+  china:
+    file: china.list
+    domains:
+      - pc528.net
+      - t-rex.tzfile.com
+      - time.windows.com
+      - pandalive.co.kr
+      - appsflyersdk.com
+      - neolive.kr
+  ai:
+    file: ai.list
+    domains:
+      - grok.x.com
+      - curseforge.com
+      - cursor.com
+      - cursor.sh
+      - cursorapi.com
+      - lmarena.ai
+  ad:
+    file: ad.list
+    domains: []
+
+externalUrls:
+  lan: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+  aiSkk: https://ruleset.skk.moe/Clash/non_ip/ai.txt
+  steamCn: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+  googleCn: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+  appleCn: https://ruleset.skk.moe/Clash/non_ip/apple_cn.txt
+  chinaDomain: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+  chinaCompanyIp: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+  download: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+  directSkk: https://ruleset.skk.moe/Clash/non_ip/direct.txt
+  gameDownload: https://ruleset.skk.moe/Clash/domainset/game-download.txt
+  domesticSkk: https://ruleset.skk.moe/Clash/non_ip/domestic.txt
+  proxyGfw: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+  awaClassic: clash-classic:https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml
+
+profiles:
+  - file: mini.ini
+    template: mini
+    includeAd: false
+    includeForeign: false
+  - file: mini-ad.ini
+    template: mini
+    includeAd: true
+    includeForeign: false
+  - file: global-ad.ini
+    template: mini
+    includeAd: true
+    includeForeign: true
