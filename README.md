@@ -39,9 +39,9 @@ http://127.0.0.1:25500/sub?target=clash&url=%URL%&config=%CONFIG%
 常用 `config`：
 
 ```text
-https://raw.githubusercontent.com/hqw567/clash/main/v1/config/mini.ini
-https://raw.githubusercontent.com/hqw567/clash/main/v1/config/mini-ad.ini
-https://raw.githubusercontent.com/hqw567/clash/main/v1/config/global-ad.ini
+https://raw.githubusercontent.com/hqw567/subconv-ruleforge/main/v1/config/mini.ini
+https://raw.githubusercontent.com/hqw567/subconv-ruleforge/main/v1/config/mini-ad.ini
+https://raw.githubusercontent.com/hqw567/subconv-ruleforge/main/v1/config/global-ad.ini
 ```
 
 3) 把生成的转换链接作为订阅地址导入 Clash 客户端（Clash Verge / Clash for Windows / Mihomo Party 等），更新订阅即可。

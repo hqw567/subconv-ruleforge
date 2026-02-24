@@ -1,5 +1,5 @@
 output:
-  rawBaseUrl: https://raw.githubusercontent.com/hqw567/clash/main
+  rawBaseUrl: https://raw.githubusercontent.com/hqw567/subconv-ruleforge/main
   configDir: v1/config
   rulesDir: v1/rules
 
