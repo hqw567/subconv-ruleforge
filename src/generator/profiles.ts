@@ -46,14 +46,14 @@ function buildMiniRules(context: ProfileBuilderContext, includeAd: boolean, incl
   rules.push(rule('🤖 AI', externalUrl('aiSkk')))
   rules.push('')
   rules.push(rule('🇨🇳 国内', externalUrl('steamCn')))
-  rules.push(rule('🇨🇳 国内', externalUrl('googleCn')))
+  // rules.push(rule('🇨🇳 国内', externalUrl('googleCn')))
   rules.push(rule('🇨🇳 国内', externalUrl('appleCn')))
-  rules.push(rule('🇨🇳 国内', externalUrl('chinaDomain')))
+  // rules.push(rule('🇨🇳 国内', externalUrl('chinaDomain')))
   rules.push(rule('🇨🇳 国内', externalUrl('chinaCompanyIp')))
   rules.push(rule('🇨🇳 国内', externalUrl('download')))
-  // rules.push(rule('🇨🇳 国内', externalUrl('directSkk')))
+  rules.push(rule('🇨🇳 国内', externalUrl('directSkk')))
   rules.push(rule('🇨🇳 国内', externalUrl('gameDownload')))
-  // rules.push(rule('🇨🇳 国内', externalUrl('domesticSkk')))
+  rules.push(rule('🇨🇳 国内', externalUrl('domesticSkk')))
   rules.push(rule('🇨🇳 国内', '[]GEOIP,CN'))
 
   if (includeForeign) {
