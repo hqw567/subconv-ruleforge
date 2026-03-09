@@ -19,7 +19,6 @@ rules:
       - t-rex.tzfile.com
       - time.windows.com
       - pandalive.co.kr
-      - appsflyersdk.com
       - neolive.kr
   ai:
     file: ai.list
@@ -32,7 +31,8 @@ rules:
       - lmarena.ai
   ad:
     file: ad.list
-    domains: []
+    domains:
+      - appsflyersdk.com
 
 externalUrls:
   lan: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
