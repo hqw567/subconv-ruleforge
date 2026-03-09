@@ -8,6 +8,7 @@ rules:
     file: proxy.list
     domains:
       - services.googleapis.cn
+      - xn--ngstr-lra8j.com
       - hdhive.com
       - truenas.com
       - ffqla.net
