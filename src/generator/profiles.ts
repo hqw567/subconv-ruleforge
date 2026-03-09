@@ -54,12 +54,15 @@ function buildMiniRules(context: ProfileBuilderContext, includeAd: boolean, incl
   rules.push(rule('🇨🇳 国内', externalUrl('directSkk')))
   rules.push(rule('🇨🇳 国内', externalUrl('gameDownload')))
   rules.push(rule('🇨🇳 国内', externalUrl('domesticSkk')))
-  rules.push(rule('🇨🇳 国内', '[]GEOIP,CN'))
 
   if (includeForeign) {
     rules.push('')
     rules.push(rule('✈️ 国外', externalUrl('proxyGfw')))
+  } else {
+    rules.push(rule('PROXY', externalUrl('proxyLite')))
   }
+
+  rules.push(rule('🇨🇳 国内', '[]GEOIP,CN'))
 
   rules.push('')
   rules.push(rule('❓ 未知', '[]FINAL'))

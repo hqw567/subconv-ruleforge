@@ -47,6 +47,7 @@ externalUrls:
   gameDownload: https://ruleset.skk.moe/Clash/domainset/game-download.txt
   domesticSkk: https://ruleset.skk.moe/Clash/non_ip/domestic.txt
   proxyGfw: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+  proxyLite: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
   awaClassic: clash-classic:https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml
 
 profiles:
