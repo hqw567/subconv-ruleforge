@@ -59,7 +59,7 @@ function buildMiniRules(context: ProfileBuilderContext, includeAd: boolean, incl
     rules.push('')
     rules.push(rule('✈️ 国外', externalUrl('proxyGfw')))
   } else {
-    rules.push(rule('PROXY', externalUrl('proxyLite')))
+    rules.push(rule('🌍 代理', externalUrl('proxyLite')))
   }
 
   rules.push(rule('🇨🇳 国内', '[]GEOIP,CN'))
