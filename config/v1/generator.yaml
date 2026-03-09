@@ -7,7 +7,7 @@ rules:
   proxy:
     file: proxy.list
     domains:
-      - services.googleapis.cn
+      - googleapis.cn
       - xn--ngstr-lra8j.com
       - hdhive.com
       - truenas.com
