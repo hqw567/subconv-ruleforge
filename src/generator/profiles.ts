@@ -30,7 +30,12 @@ interface ProfileBuilderContext {
 
 function buildMiniRules(context: ProfileBuilderContext, includeAd: boolean, includeForeign: boolean): string[] {
   const { customRuleUrl, externalUrl } = context
-  const rules: string[] = [rule('DIRECT', externalUrl('lan')), rule('DIRECT', customRuleUrl('direct')), '']
+  const rules: string[] = [
+    rule('DIRECT', externalUrl('lan')),
+    rule('DIRECT', externalUrl('directSkk')),
+    rule('DIRECT', customRuleUrl('direct')),
+    '',
+  ]
 
   rules.push(rule(includeForeign ? '✈️ 国外' : '🌍 代理', customRuleUrl('proxy')))
   rules.push(rule('🇨🇳 国内', customRuleUrl('china')))
@@ -43,22 +48,25 @@ function buildMiniRules(context: ProfileBuilderContext, includeAd: boolean, incl
     rules.push('')
   }
 
+  rules.push(rule('🤖 AI', externalUrl('ai')))
   rules.push(rule('🤖 AI', externalUrl('aiSkk')))
   rules.push('')
-  rules.push(rule('🇨🇳 国内', externalUrl('steamCn')))
   rules.push(rule('🇨🇳 国内', externalUrl('googleCn')))
   rules.push(rule('🇨🇳 国内', externalUrl('appleCn')))
+  rules.push(rule('🇨🇳 国内', externalUrl('steamCn')))
+  rules.push(rule('🇨🇳 国内', externalUrl('appleCdn')))
   rules.push(rule('🇨🇳 国内', externalUrl('chinaDomain')))
+  rules.push(rule('🇨🇳 国内', externalUrl('domesticSkk')))
   rules.push(rule('🇨🇳 国内', externalUrl('chinaCompanyIp')))
   rules.push(rule('🇨🇳 国内', externalUrl('download')))
-  rules.push(rule('🇨🇳 国内', externalUrl('directSkk')))
   rules.push(rule('🇨🇳 国内', externalUrl('gameDownload')))
-  rules.push(rule('🇨🇳 国内', externalUrl('domesticSkk')))
 
   if (includeForeign) {
     rules.push('')
     rules.push(rule('✈️ 国外', externalUrl('proxyGfw')))
   } else {
+    rules.push(rule('🌍 代理', externalUrl('telegram')))
+    rules.push(rule('🌍 代理', externalUrl('proxyMedia')))
     rules.push(rule('🌍 代理', externalUrl('proxyLite')))
   }
 

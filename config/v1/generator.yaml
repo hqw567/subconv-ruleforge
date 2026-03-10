@@ -42,9 +42,11 @@ rules:
 externalUrls:
   lan: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
   aiSkk: https://ruleset.skk.moe/Clash/non_ip/ai.txt
+  ai: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
   steamCn: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
   googleCn: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
   appleCn: https://ruleset.skk.moe/Clash/non_ip/apple_cn.txt
+  appleCdn: https://ruleset.skk.moe/Clash/domainset/apple_cdn.txt
   chinaDomain: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
   chinaCompanyIp: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
   download: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
@@ -53,6 +55,8 @@ externalUrls:
   domesticSkk: https://ruleset.skk.moe/Clash/non_ip/domestic.txt
   proxyGfw: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
   proxyLite: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+  proxyMedia: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+  telegram: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
   awaClassic: clash-classic:https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml
 
 profiles:
