@@ -86,7 +86,7 @@ function buildMiniProxyGroups(includeAd: boolean, includeForeign: boolean): stri
   const groups: string[] = [
     selectGroup('🌍 代理', ...proxyBase),
     'custom_proxy_group=🎯 手动`select`.*`[]DIRECT',
-    urlTestGroup('⚡ 自动', '.*', '300,,150'),
+    urlTestGroup('⚡ 自动', '.*', '300,,50'),
   ]
 
   if (includeForeign) {
@@ -126,13 +126,13 @@ function buildMiniProxyGroups(includeAd: boolean, includeForeign: boolean): stri
 }
 
 const MINI_NODE_GROUPS = [
-  urlTestGroup('🇭🇰 香港', MINI_REGION_PATTERN.hk, '300,,150'),
-  urlTestGroup('🇺🇲 美国', MINI_REGION_PATTERN.us, '300,,150'),
-  urlTestGroup('🇯🇵 日本', MINI_REGION_PATTERN.jp, '300,,150'),
-  urlTestGroup('🇸🇬 新加坡', MINI_REGION_PATTERN.sg, '300,,150'),
-  urlTestGroup('🇹🇼 台湾', MINI_REGION_PATTERN.tw, '300,,150'),
-  urlTestGroup('🇰🇷 韩国', MINI_REGION_PATTERN.kr, '300,,150'),
-  urlTestGroup('其他国家', MINI_REGION_PATTERN.other, '300,,150'),
+  urlTestGroup('🇭🇰 香港', MINI_REGION_PATTERN.hk, '300,,50'),
+  urlTestGroup('🇺🇲 美国', MINI_REGION_PATTERN.us, '300,,50'),
+  urlTestGroup('🇯🇵 日本', MINI_REGION_PATTERN.jp, '300,,50'),
+  urlTestGroup('🇸🇬 新加坡', MINI_REGION_PATTERN.sg, '300,,50'),
+  urlTestGroup('🇹🇼 台湾', MINI_REGION_PATTERN.tw, '300,,50'),
+  urlTestGroup('🇰🇷 韩国', MINI_REGION_PATTERN.kr, '300,,50'),
+  urlTestGroup('其他国家', MINI_REGION_PATTERN.other, '300,,50'),
 ] as const
 
 export function buildProfiles(config: GeneratorConfig): readonly IniProfile[] {
