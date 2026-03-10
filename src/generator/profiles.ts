@@ -30,7 +30,7 @@ interface ProfileBuilderContext {
 
 function buildMiniRules(context: ProfileBuilderContext, includeAd: boolean, includeForeign: boolean): string[] {
   const { customRuleUrl, externalUrl } = context
-  const rules: string[] = [rule('DIRECT', externalUrl('lan')), '']
+  const rules: string[] = [rule('DIRECT', externalUrl('lan')), rule('DIRECT', customRuleUrl('direct')), '']
 
   rules.push(rule(includeForeign ? '✈️ 国外' : '🌍 代理', customRuleUrl('proxy')))
   rules.push(rule('🇨🇳 国内', customRuleUrl('china')))
