@@ -6,9 +6,7 @@ output:
 rules:
   direct:
     file: direct.list
-    domains:
-      - pandalive.co.kr
-      - neolive.kr
+    domains: []
   proxy:
     file: proxy.list
     domains:
@@ -25,6 +23,8 @@ rules:
       - pc528.net
       - t-rex.tzfile.com
       - time.windows.com
+      - pandalive.co.kr
+      - neolive.kr
   ai:
     file: ai.list
     domains:
